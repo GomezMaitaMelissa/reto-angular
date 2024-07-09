@@ -1,0 +1,28 @@
+<div class="fondo">
+  <section class="LogIn">
+    <div class="LogIn__form">
+      <div class="LogIn__form-title">
+        <h1>Login</h1>
+      </div>
+      <form
+        class="LogIn__form-container"
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="form-input">
+          <label for="user">Usuario:</label>
+          <input class="input" id="user" formControlName="user" type="text" />
+
+          <label for="password">Contraseña:</label>
+          <input
+            class="input"
+            id="password"
+            formControlName="password"
+            type="password"
+          />
+        </div>
+        <div class="form-button"><button type="submit">Ingresar</button></div>
+      </form>
+    </div>
+  </section>
+</div>

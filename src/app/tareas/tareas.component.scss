@@ -1,0 +1,134 @@
+.Tareas {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 500px;
+    z-index: 3;
+    box-shadow: 1px 1px 20px rgba(211, 12, 184, 0.753);
+    background-image: url('/assets/img/background-tareas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__user {
+    width: 80%;
+    padding: 20px;
+    margin: -20px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgba(166, 23, 209, 0.753);
+  }
+
+  &__add {
+    padding: 50px 10px 10px 10px;
+
+    h3 {
+      margin: 10px;
+      color: white;
+      text-shadow:
+        1px 1px 2px rgb(206, 43, 255),
+        -1px -1px 2px rgb(109, 221, 255);
+    }
+
+    label {
+      margin: 10px;
+      color: white;
+      text-shadow:
+        1px 1px 2px rgb(206, 43, 255),
+        -1px -1px 2px rgb(109, 221, 255);
+    }
+
+    input {
+      margin: 10px;
+      width: 60%;
+      box-shadow: 1px 1px 15px rgb(67, 212, 231);
+      border-radius: 5px;
+      padding-left: 5px;
+    }
+
+    button {
+      margin: 10px;
+      color: rgb(255, 251, 251);
+      width: 80px;
+      height: 25px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.603);
+      background-color: rgba(98, 194, 211, 0.959);
+      box-shadow: 1px 1px 15px rgba(67, 212, 231, 0.89);
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    margin: 60px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgb(228, 228, 228);
+    border-radius: 25px;
+
+    ul {
+      list-style-type: none;
+      padding-left: 30px;
+    }
+
+    li {
+      margin: 10px 0px 10px 0px;
+    }
+
+    span {
+      margin: 0px 20px 0px 10px;
+    }
+
+    button {
+      color: rgb(83, 20, 20);
+      border: 0px;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    margin: 10px;
+
+    &__container {
+      height: 500px;
+    }
+
+    &__add {
+      label {
+        margin: 5px;
+      }
+
+      input {
+        margin: 5px;
+        width: 50%;
+      }
+
+      button {
+        margin: 5px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    margin: 80px;
+    padding-left: 12%;
+    padding-right: 12%;
+
+    &__container {
+      height: 700px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: 80px;
+
+    &__container {
+      margin-top: -20px;
+      height: 600px;
+    }
+  }
+}
